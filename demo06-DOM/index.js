@@ -1,7 +1,6 @@
-/** @jsx React.DOM */
 var Hello = React.createClass({
     handleClick: function(){
-        alert(this.refs.myInput.getDOMNode().value);
+        alert(ReactDOM.findDOMNode(this.refs.myInput).value);
     },
     render: function(){
         return (
@@ -13,7 +12,7 @@ var Hello = React.createClass({
     }
 });
 
-React.render(
+ReactDOM.render(
     <Hello />,
     document.getElementById("content")
 )

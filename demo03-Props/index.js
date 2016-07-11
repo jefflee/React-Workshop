@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var Hello = React.createClass({
     render: function(){
         return (
@@ -9,7 +8,7 @@ var Hello = React.createClass({
     }
 });
 
-React.render(
-    <Hello name="Andy" />,
-    document.getElementById("content")
-)
+ReactDOM.render(
+			<Hello name="Jeff Lee" />,
+			document.getElementById("content")
+		)

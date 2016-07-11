@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var Hello = React.createClass({
     render: function(){
         return (
@@ -9,7 +8,7 @@ var Hello = React.createClass({
     }
 });
 
-React.render(
+ReactDOM.render(
     <Hello />,
     document.getElementById("content")
 )
