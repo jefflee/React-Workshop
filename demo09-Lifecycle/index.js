@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var Hello = React.createClass({
     getInitialState: function(){
         return {opacity: 0.1, left: 0};
@@ -33,7 +32,7 @@ var Hello = React.createClass({
     }
 });
 
-React.render(
-    <Hello name="Andy" />,
+ReactDOM.render(
+    <Hello name="Jeff" />,
     document.getElementById("content")
 )

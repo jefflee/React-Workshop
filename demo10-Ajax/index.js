@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var Toeic = React.createClass({
     getInitialState: function(){
         return {items: []};
@@ -33,7 +32,7 @@ var Toeic = React.createClass({
     }
 });
 
-React.render(
+ReactDOM.render(
     <Toeic source="http://TOWNKEN.github.io/ToeicWordList/toeic.json"/>,
     document.getElementById("content")
 )

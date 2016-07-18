@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var Input = React.createClass({
     getInitialState: function(){
         return {value: ""};
@@ -16,7 +15,7 @@ var Input = React.createClass({
     }
 });
 
-React.render(
+ReactDOM.render(
     <Input />,
     document.getElementById("content")
 )

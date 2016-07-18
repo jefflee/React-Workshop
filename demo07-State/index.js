@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var LikeButton = React.createClass({
     getInitialState: function(){
         return {liked: true};
@@ -18,7 +17,7 @@ var LikeButton = React.createClass({
     }
 });
 
-React.render(
+ReactDOM.render(
     <LikeButton />,
     document.getElementById("content")
 )
